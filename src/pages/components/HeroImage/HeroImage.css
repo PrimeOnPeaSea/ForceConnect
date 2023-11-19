@@ -1,0 +1,253 @@
+.hero-background {
+  height: 70vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #e8d5b7, #162241);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-sections {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left .frame {
+  position: relative;
+  height: 40%;
+  aspect-ratio: 1/1;
+  transform: translate(0%, 2%);
+}
+
+.left .frame .left_image {
+  position: relative;
+  background-image: url("/src/images/tank.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  aspect-ratio: 7/3;
+  transform: translate(0%, 30%);
+}
+
+.left .text {
+  height: 30%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.left .text .description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e8d5b7;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.middle {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.middle .circle {
+  position: relative;
+  height: 95%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #ffffff, #9b8266);
+  transform: translate(0%, 2%);
+}
+
+.middle .image {
+  position: relative;
+  background-image: url("/src/images/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  transform: translate(0%, 3%);
+  aspect-ratio: 1/1;
+}
+
+.right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right .frame {
+  position: relative;
+  height: 40%;
+  aspect-ratio: 1/1;
+  transform: translate(0%, 2%);
+}
+
+.right .frame .right_image {
+  position: relative;
+  background-image: url("/src/images/helicopter.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  aspect-ratio: 2/1;
+  transform: translate(0%, 30%);
+}
+
+.right .text {
+  height: 30%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.right .text .description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e8d5b7;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.clear-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+.button {
+  position: relative;
+  border-radius: 8rem;
+  display: inline-block;
+  height: fit-content;
+}
+
+.button::after {
+  border: 0.2rem solid #182641;
+}
+
+.button::before {
+  border: 0.2rem solid #ffffff;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  left: 35%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: all 0.8s ease 0s;
+}
+.button:before {
+  animation: rotate 20s infinite linear;
+}
+.button:after {
+  animation: rotate 25s infinite linear;
+}
+.button__text {
+  display: block;
+  position: relative;
+  width: fit-content;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 3rem;
+  border-radius: 8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ac8e72;
+  letter-spacing: 0.5rem;
+  transition: all 0.8s ease 0s;
+  overflow: hidden;
+}
+.button__text:before,
+.button__text:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-color: #ebe6e1;
+  transition: all 0.8s ease 0s;
+}
+.button__text:before {
+  left: 0;
+}
+.button__text:after {
+  right: 0;
+}
+.button__text span {
+  position: relative;
+}
+.button__text:before,
+.button__text span {
+  z-index: 2;
+}
+.button:hover:before,
+.button:hover:after {
+  left: 100%;
+  opacity: 0;
+}
+.button:hover .button__text,
+.button:active .button__text {
+  color: #162241;
+  transition: all 0.8s ease 0s;
+  box-shadow: 0 0.5rem 0 0 #9b8266;
+}
+.button:hover .button__text:before,
+.button:hover .button__text:after {
+  background-color: #ac8e72;
+}
+.button:hover .button__text:before {
+  width: 200%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
