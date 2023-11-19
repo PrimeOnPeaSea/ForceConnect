@@ -5,7 +5,7 @@ import Login from "./Login";
 import Register from "./Register";
 
 const Auth = () => {
-  const [activeForm, setActiveForm] = useState("login");
+  const [activeForm, setActiveForm] = useState("active");
 
   return (
     <div>
