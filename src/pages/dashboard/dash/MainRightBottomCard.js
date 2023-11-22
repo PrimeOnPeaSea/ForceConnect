@@ -6,7 +6,7 @@ function MainRightBottomCard() {
     <div className="bottom_card">
       <div className="bottomCard_name">
         <h2>You Should Follow</h2>
-        <a href="/">View More</a>
+        <a href="/wvcx">View More</a>
       </div>
 
       {TopSeller &&
@@ -20,7 +20,7 @@ function MainRightBottomCard() {
                 {seller?.seller_name} <span>{seller?.username}</span>
               </p>
             </div>
-            <a href="/" className="butt">
+            <a href="/cewx" className="butt">
               Follow
             </a>
           </div>

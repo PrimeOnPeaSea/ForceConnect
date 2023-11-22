@@ -25,7 +25,7 @@ function MainContainer() {
             <h2>Making Forces</h2>
             <p>Learn With Top Instructors</p>
             <div className="bid">
-              <a href="/" className="butt">
+              <a href="/vescx" className="butt">
                 Shop Now
               </a>
               <p>
@@ -39,21 +39,21 @@ function MainContainer() {
           <div className="filters">
             <div className="popular">
               <h2>Blogs</h2>
-              <a href="/" className="butt2">
+              <a href="/csa" className="butt2">
                 Popular
               </a>
             </div>
             <div className="filter_butts">
-              <a href="/" className="butt">
+              <a href="/vswc" className="butt">
                 All
               </a>
-              <a href="/" className="butt2">
+              <a href="/sd" className="butt2">
                 Army
               </a>
-              <a href="/" className="butt2">
+              <a href="/scax" className="butt2">
                 Navy
               </a>
-              <a href="/" className="butt2">
+              <a href="/cjo" className="butt2">
                 Air Force
               </a>
             </div>

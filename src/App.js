@@ -13,6 +13,7 @@ import HeroImage from "./pages/components/HeroImage/HeroImage";
 import BlogPosts from "./pages/components/BlogPosts/BlogPosts";
 import Products from "./pages/components/Products/Products";
 import Footer from "./pages/components/Footer/Footer";
+import Error from "./pages/error/Err.js";
 
 // Existing imports
 import Profile from "./pages/dashboard/Profile";
@@ -65,6 +66,7 @@ function App() {
             }
           />
           <Route path="/verify-email" element={<VerifyEmail />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </AuthProvider>

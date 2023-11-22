@@ -5,7 +5,7 @@ function MainRightTopCard() {
     <div className="topCard">
       <div className="topCard_name">
         <h2>Course Recommendations</h2>
-        <a href="/">View More</a>
+        <a href="/more">View More</a>
       </div>
 
       <div className="earning">
